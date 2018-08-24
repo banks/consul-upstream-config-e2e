@@ -1,0 +1,6 @@
+{
+  "name": "deprecated-proxy-json-api",
+  "port": 3333,
+  "kind": "connect-proxy",
+  "ProxyDestination": "web"
+}

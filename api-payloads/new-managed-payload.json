@@ -1,0 +1,22 @@
+{
+  "name": "new-managed-json-api",
+  "port": 2222,
+  "connect": {
+    "proxy": {
+      "upstreams": [
+        {
+          "destination_name": "db",
+          "local_bind_port": 1234,
+          "config": {
+            "connect_timeout_ms": 1000
+          }
+        },
+        {
+          "destination_name": "geo-cache",
+          "destination_type": "prepared_query",
+          "local_bind_port": 1235
+        }
+      ]
+    }
+  }
+}

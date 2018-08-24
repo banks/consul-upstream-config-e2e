@@ -1,0 +1,18 @@
+[
+  {
+    "DestinationType": "service",
+    "DestinationName": "db",
+    "Datacenter": "",
+    "LocalBindPort": 1234,
+    "Config": {
+      "connect_timeout_ms": 1000
+    }
+  },
+  {
+    "DestinationType": "prepared_query",
+    "DestinationName": "geo-cache",
+    "Datacenter": "",
+    "LocalBindPort": 1235,
+    "Config": null
+  }
+]
